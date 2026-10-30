@@ -6,7 +6,6 @@ export const site = {
   location: 'Addis Ababa, Ethiopia',
   timezone: 'Africa/Addis_Ababa',
   email: 'yohannes.h93@gmail.com',
-  phone: '+251 935 355 587',
   resume: '/Yohannes_Haile_Resume.pdf',
   available: true,
   intro: 'Full-stack developer with hands-on experience building production SaaS, booking platforms, and AI applications. Proficient in Next.js, React, TypeScript, Node.js, Better Auth, and relational database modeling with PostgreSQL and Prisma.',
