@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react'
-import { ArrowUpRight, Mail, MapPin, Phone, Plus } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin, Plus } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router'
 
@@ -37,10 +37,6 @@ export function Home() {
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.7, ease }} className="mt-10 border-t border-fg/15 pt-6">
             <p className="text-pretty text-[clamp(16px,4vw,19px)] leading-relaxed text-muted sm:text-[clamp(18px,4.5vw,21px)] max-w-[clamp(600px,30vw,800px)]">{site.intro}</p>
             <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3 text-[14px]">
-              <a href={`tel:${site.phone.replace(/\s+/g, '')}`} className="link-draw inline-flex items-center gap-2 font-medium text-fg">
-                <Phone className="size-4 text-accent" />
-                {site.phone}
-              </a>
               <a href={`mailto:${site.email}`} className="link-draw inline-flex items-center gap-2 text-muted transition-colors hover:text-fg">
                 <Mail className="size-4" />
                 {site.email}
