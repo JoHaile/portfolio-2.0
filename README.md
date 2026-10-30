@@ -31,6 +31,20 @@ bun run build      # dist/client (assets) + dist/portfolio/index.js (Worker)
 
 Motion respects `prefers-reduced-motion`, and the preloader runs once per tab.
 
+## Deploy
+
+Live at **https://portfolio.yohannes-h93.workers.dev**.
+
+Cloudflare Workers Builds is connected to `JoHaile/portfolio-2.0`, so every
+push to `main` builds and deploys automatically. Build command:
+`npm install && npm run build`; deploy command: `npx wrangler deploy`.
+
+To ship from a terminal instead:
+
+```sh
+bun run deploy
+```
+
 ## Deploy with Freebuff Sites
 
 `deploy.json` points at the build output. After `bun run build`, deploy with
